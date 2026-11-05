@@ -1,0 +1,31 @@
+/* Paleta del primer parcial */
+:root {
+  --naranja: #E8750A;
+  --naranja-osc: #B85A00;
+  --carbon: #2E2E2E;
+  --gris: #F2F2F2;
+  --blanco: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { margin: 0; font-family: "Arimo", Arial, sans-serif; color: var(--carbon); background: var(--blanco); line-height: 1.6; }
+h1, h2, h3, nav, .btn, .brand, th { font-family: "Poppins", Arial, sans-serif; }
+img { max-width: 100%; display: block; }
+a { color: var(--naranja-osc); }
+:focus-visible { outline: 3px solid var(--naranja); outline-offset: 2px; }
+
+.wrap { width: min(1080px, 92%); margin: 0 auto; padding: 56px 0; }
+.band { background: var(--gris); }
+.band > .wrap { padding: 56px 0; }
+h2 { font-size: 1.9rem; margin: 0 0 24px; padding-bottom: 8px; border-bottom: 4px solid var(--naranja); display: inline-block; }
+h3 { margin: 0 0 6px; font-size: 1.1rem; }
+.sub { margin-top: 40px; font-size: 1.3rem; }
+
+/* Menú */
+.topbar { position: sticky; top: 0; z-index: 10; background: var(--carbon); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding: 10px 4%; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--blanco); text-decoration: none; font-weight: 600; }
+.logo { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--naranja); font-weight: 700; }
+nav { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+nav a { color: var(--blanco); text-decoration: none; font-weight: 500; font-size: .95rem; padding: 4px 0; border-bottom: 3px solid transparent; }
+nav a:hover, nav a:focus-visible { border-bottom-color: var(--naranja); }
