@@ -29,3 +29,47 @@ h3 { margin: 0 0 6px; font-size: 1.1rem; }
 nav { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 nav a { color: var(--blanco); text-decoration: none; font-weight: 500; font-size: .95rem; padding: 4px 0; border-bottom: 3px solid transparent; }
 nav a:hover, nav a:focus-visible { border-bottom-color: var(--naranja); }
+
+
+/* ESTILOS ADICIONALES */
+
+/* Campo de correo electrónico */
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font: inherit;
+  border: 1px solid #888;
+  border-radius: 6px;
+}
+
+/* Ajustes del área de mensaje */
+textarea {
+  resize: vertical;
+}
+
+/* Video y mapa */
+iframe {
+  max-width: 100%;
+}
+
+/* Tarjetas de clientes */
+#clientes .card {
+  height: 100%;
+}
+
+/* DISEÑO RESPONSIVO */
+
+/* Tabletas y pantallas pequeñas */
+@media (max-width: 800px) {
+  #nosotros .two,
+  .band .two {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  #contacto form {
+    padding: 16px;
+  }
+}
